@@ -28,12 +28,12 @@ function isPalindrome() {
     }
 
 } */
+numberGame()
 
-
-
+function numberGame () {
 //chiediamo all'utente di scegliere tra pari e dispari e controlliamo che possa rispondere solo con pari o dispari
+let oddEvenText = document.querySelector(".odd-even-result");
 let checkCondition = false;
-
 while (checkCondition == false) {
     pariOdispari = prompt("scegli pari o dispari");
     if (pariOdispari === "pari") {
@@ -64,13 +64,30 @@ console.log(pari);
 //se l'utente ha scelto pari e la somma è pari, vince l'utente, se no vince il computer
  if (pariOdispari === "pari" && pari === true) {
     console.log("congratulazioni hai vinto")
+    oddEvenText.innerHTML = 
+    `
+    <div class="even-true">Il risultato è <span class="evidence">${somma}</span>, congratulazioni hai vinto</div>
+    `
  }
  else if (pariOdispari === "dispari" && pari === false) {
     console.log("congratulazioni hai vinto")
+    oddEvenText.innerHTML = 
+    `
+    <div class="odd-true">Il risultato è <span class="evidence">${somma}</span>, congratulazioni hai vinto</div>
+    `
  }
  else {
     console.log("mi dispiace, hai perso");
+    oddEvenText.innerHTML = 
+    `
+    <div class="odd-even-false">Il risultato è <span class="evidence">${somma}</span>, mi dispiace, hai perso</div>
+    `
  }
+
+
+}
+
+
 
 
 
