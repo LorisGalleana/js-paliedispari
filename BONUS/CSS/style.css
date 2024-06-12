@@ -16,8 +16,8 @@
 .evidence {
     color: red;
 }
-.palindrome-start {
-    width: 100vw;
+.palindrome-start, .odd-even-start {
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,4 +26,7 @@
 input, button {
     font-size: 32px;
     margin: 5px;
+}
+.page-container {
+    display:flex;
 }

@@ -2,13 +2,17 @@ let sendButton = document.querySelector(".send")
 
 sendButton.addEventListener("click", isPalindrome)
 
-//isPalindrome()
+
 
 function isPalindrome() {
     let show = document.querySelector(".palindrome-result")
     let hide = document.querySelector(".palindrome-start")
+    let hide2 = document.querySelector(".odd-even-start")
     show.style.display = "flex"
     hide.style.display = "none"
+    hide2.style.display = "none"
+
+
     let palindromeWord = document.querySelector(".palindrome-word").value;
     let palindromo1 = palindromeWord;
     let caratteri = parseInt(palindromo1.length);
@@ -36,14 +40,22 @@ function isPalindrome() {
 
 }
 
-//    numberGame()
 
-/* let startButton = document.querySelector(".start-game")
+
+let startButton = document.querySelector(".start-game")
 
 startButton.addEventListener("click", numberGame)
- */
+
 function numberGame () {
 //chiediamo all'utente di scegliere tra pari e dispari e controlliamo che possa rispondere solo con pari o dispari
+let show = document.querySelector(".odd-even-result")
+let hide = document.querySelector(".odd-even-start")
+let hide2 = document.querySelector(".palindrome-start")
+show.style.display = "flex"
+hide.style.display = "none"
+hide2.style.display = "none"
+
+
 let oddEvenText = document.querySelector(".odd-even-result");
 let checkCondition = false;
 while (checkCondition == false) {
