@@ -35,13 +35,12 @@ function isPalindrome() {
 let pariOdispari = prompt("scegli pari o dispari");
 //chiediamo all'utente di scegliere un numero tra 1 e 5
 let userNumber = parseInt(prompt("scegli un numero da 1 a 5"));
-
 //controlliamo che il numero sia effettivamente in quell'intervallo
-
+while (userNumber < 1 || userNumber > 5) {
+    userNumber = parseInt(prompt("scegli un numero da 1 a 5"))
+}
 //generiamo un numero random da 1 a 5 e lo assegniamo al computer
 let pcNumber = rangeNumber(5, 1);
-
-
 
 //sommiamo i due numeri
 
