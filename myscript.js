@@ -62,7 +62,15 @@ console.log(somma);
 let pari = oddEven(somma)
 console.log(pari);
 //se l'utente ha scelto pari e la somma è pari, vince l'utente, se no vince il computer
-
+ if (pariOdispari === "pari" && pari === true) {
+    console.log("congratulazioni hai vinto")
+ }
+ else if (pariOdispari === "dispari" && pari === false) {
+    console.log("congratulazioni hai vinto")
+ }
+ else {
+    console.log("mi dispiace, hai perso");
+ }
 
 
 
