@@ -34,6 +34,7 @@ function isPalindrome() {
 //chiediamo all'utente di scegliere tra pari e dispari
 let pariOdispari = prompt("scegli pari o dispari");
 //chiediamo all'utente di scegliere un numero tra 1 e 5
+let userNumber = parseInt(prompt("scegli un numero da 1 a 5"));
 
 //controlliamo che il numero sia effettivamente in quell'intervallo
 
