@@ -43,6 +43,7 @@ while (userNumber < 1 || userNumber > 5) {
 let pcNumber = rangeNumber(5, 1);
 
 //sommiamo i due numeri
+let somma = userNumber + pcNumber;
 
 //se l'utente ha scelto pari e la somma è pari, vince l'utente, se no vince il computer
 
