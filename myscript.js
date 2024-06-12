@@ -1,11 +1,9 @@
-let sendButton = document.querySelector(".send")
 
-sendButton.addEventListener("click", isPalindrome)
 
+/* isPalindrome()
 
 function isPalindrome() {
-    let palindromeWord = document.querySelector(".palindrome-word").value;
-    let palindromo1 = palindromeWord;
+    let palindromo1 = prompt("inserisci una parola");
     let caratteri = parseInt(palindromo1.length);
     let index = caratteri - 1;
     let palindromo2 = "";
@@ -29,14 +27,9 @@ function isPalindrome() {
         `
     }
 
-}
+} */
+numberGame()
 
-//    numberGame()
-
-/* let startButton = document.querySelector(".start-game")
-
-startButton.addEventListener("click", numberGame)
- */
 function numberGame () {
 //chiediamo all'utente di scegliere tra pari e dispari e controlliamo che possa rispondere solo con pari o dispari
 let oddEvenText = document.querySelector(".odd-even-result");
