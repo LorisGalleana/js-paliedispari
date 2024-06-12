@@ -21,13 +21,13 @@ function isPalindrome() {
     if (palindromo2 === palindromo1) {
         textPalindrome.innerHTML = 
         `
-        <div class="palindrome-true">La parola ${palindromo1} è palindroma</div>
+        <div class="palindrome-true">La parola <span class="evidence">${palindromo1}</span> è palindroma</div>
         `
     }
     else {
         textPalindrome.innerHTML = 
         `
-        <div class="palindrome-false">La parola ${palindromo1} non è palindroma</div>
+        <div class="palindrome-false">La parola <span class="evidence">${palindromo1}</span> non è palindroma</div>
         `
     }
 
