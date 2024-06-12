@@ -1,10 +1,6 @@
 
 
-isPalindrome()
-
-
-
-
+/* isPalindrome()
 
 function isPalindrome() {
     let palindromo1 = prompt("inserisci una parola");
@@ -31,5 +27,31 @@ function isPalindrome() {
         `
     }
 
-}
+} */
 
+
+
+//chiediamo all'utente di scegliere tra pari e dispari
+//chiediamo all'utente di scegliere un numero tra 1 e 5
+
+//controlliamo che il numero sia effettivamente in quell'intervallo
+
+//generiamo un numero random da 1 a 5 e lo assegniamo al computer
+let pcNumber = rangeNumber(5, 1);
+
+
+
+//sommiamo i due numeri
+
+//se l'utente ha scelto pari e la somma è pari, vince l'utente, se no vince il computer
+
+
+
+
+
+
+
+function rangeNumber(max, min) {
+    let number = Math.floor(Math.random() * (max - min + 1)) + min;
+    return number
+}
