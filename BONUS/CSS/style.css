@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.palindrome-result, .odd-even-result {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 48px;
+
+}
+.evidence {
+    color: red;
+}
+.palindrome-start {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input, button {
+    font-size: 32px;
+    margin: 5px;
+}

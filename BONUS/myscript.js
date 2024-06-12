@@ -2,8 +2,13 @@ let sendButton = document.querySelector(".send")
 
 sendButton.addEventListener("click", isPalindrome)
 
+//isPalindrome()
 
 function isPalindrome() {
+    let show = document.querySelector(".palindrome-result")
+    let hide = document.querySelector(".palindrome-start")
+    show.style.display = "flex"
+    hide.style.display = "none"
     let palindromeWord = document.querySelector(".palindrome-word").value;
     let palindromo1 = palindromeWord;
     let caratteri = parseInt(palindromo1.length);
@@ -101,3 +106,5 @@ function oddEven(number) {
     let even = (number % 2 === 0)
     return even
 }
+
+
