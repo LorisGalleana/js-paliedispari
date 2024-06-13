@@ -5,11 +5,7 @@ sendButton.addEventListener("click", isPalindrome)
 
 
 function isPalindrome() {
-    let show = document.querySelector(".palindrome-result")
-    let hide = document.querySelector(".palindrome-start")
     let hide2 = document.querySelector(".odd-even-start")
-    show.style.display = "flex"
-    hide.style.display = "none"
     hide2.style.display = "none"
 
 
@@ -37,7 +33,7 @@ function isPalindrome() {
         <div class="palindrome-false">La parola <span class="evidence">${palindromo1}</span> non è palindroma</div>
         `
     }
-
+    showHide(".palindrome-result", ".palindrome-start")
 }
 
 
@@ -48,11 +44,7 @@ startButton.addEventListener("click", numberGame)
 
 function numberGame () {
 //chiediamo all'utente di scegliere tra pari e dispari e controlliamo che possa rispondere solo con pari o dispari
-let show = document.querySelector(".odd-even-result")
-let hide = document.querySelector(".odd-even-start")
 let hide2 = document.querySelector(".palindrome-start")
-show.style.display = "flex"
-hide.style.display = "none"
 hide2.style.display = "none"
 
 
@@ -84,6 +76,7 @@ let somma = userNumber + pcNumber;
 console.log(somma);
 //controlliamo se il numero è pari o dispari
 let pari = oddEven(somma)
+
 console.log(pari);
 //se l'utente ha scelto pari e la somma è pari, vince l'utente, se no vince il computer
  if (pariOdispari === "pari" && pari === true) {
@@ -108,7 +101,7 @@ console.log(pari);
     `
  }
 
-
+ showHide(".odd-even-result", ".odd-even-start")
 }
 function rangeNumber(max, min) {
     let number = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -120,3 +113,9 @@ function oddEven(number) {
 }
 
 
+function showHide(classToShow, classToHide) {
+    let show = document.querySelector(classToShow)
+    let hide = document.querySelector(classToHide)
+    show.style.display = "flex"
+    hide.style.display = "none"
+}

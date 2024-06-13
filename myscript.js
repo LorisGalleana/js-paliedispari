@@ -28,7 +28,7 @@ function isPalindrome() {
     }
 
 } */
-numberGame()
+/* numberGame() */
 
 function numberGame () {
 //chiediamo all'utente di scegliere tra pari e dispari e controlliamo che possa rispondere solo con pari o dispari
@@ -94,3 +94,4 @@ function oddEven(number) {
     let even = (number % 2 === 0)
     return even
 }
+
